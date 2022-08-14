@@ -1,0 +1,31 @@
+[username]
+style_user = "white bold"
+style_root = "black bold"
+format = " [$user]($style)"
+disabled = false
+show_always = false
+
+[hostname]
+ssh_only = true
+format = "@[$hostname](bold white)"
+trim_at = ".companyname.com"
+disabled = false
+
+[directory]
+read_only = " "
+format = "[$path]($style)[$read_only]($read_only_style) "
+
+[git_branch]
+format = "[$symbol$branch]($style) "
+
+[nodejs]
+format = "[$symbol($version)]($style)"
+
+[python]
+format = "[${symbol}${pyenv_prefix}(${version} )($virtualenv) )]($style)"
+
+[rust]
+format = "[$symbol($version )]($style)"
+
+[package]
+format = "[$symbol$version]($style) "
